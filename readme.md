@@ -1,44 +1,45 @@
-## Stonks frontend assignment
+## Stonks Frontend Assignment
 
-#### `Only use next/react library, tailwind is accepted for css.`
+#### `Only use Next.js/React library; Tailwind CSS is accepted for styling.`
 
 Your code must be clean and custom hooks are nice to have.
 
 #### Data table: [Tanstack Table and Shadcn is accepted]
 
-Create a CRUD that is SSR, you will use this endpoint
-to fetch data `https://665621609f970b3b36c4625e.mockapi.io/users`
-Docs is here for filters, pagination and limit https://github.com/mockapi-io/docs/wiki
+Create a CRUD that is SSR. You will use this endpoint to fetch data: `https://665621609f970b3b36c4625e.mockapi.io/users`
 
-- User can navigate from page 1 to 5.
-- User can search by email / username
-- Rewrite current url with current page and filters, can be multiple filters.
+Documentation for filters, pagination, and limit is here https://github.com/mockapi-io/docs/wiki
 
-#### Chat
+- Users can navigate from page 1 to 5.
+- Users can search by email/username.
+- Rewrite the current URL with the current page and filters. Multiple filters can be applied.
 
-Simple message list of users, if someone tag you should add a light background to the message. If the message contain :emoji: should be replace by the correct image.
+### Chat
 
-##### [CHAT] Emojis
+A simple message list of users. If someone tags you, a light background should be added to the message. If the message contains `:emoji:`, it should be replaced by the correct image.
 
-In the message input if the user start writing an `:emoji:` a popup/tooltip or panel of emojis will popup and user can chose one by using his **keyboard and mouse**.
+#### [CHAT] Emojis
 
-##### [CHAT] Tag a user
+In the message input, if the user starts writing an `:emoji:`, a popup/tooltip or panel of emojis will appear, and the user can choose one using the keyboard and mouse.
 
-In the message input if the user start writing `@` will show a list of min 3 users.
+#### [CHAT] Tag a user
 
-Add a filter logic so if the user want to tag `@edeuxk` and writes `@edxk` the module should be smart enough to retrieve the `@edeuxk`
+In the message input, if the user starts writing `@`, a list of at least 3 users will appear.
 
-##### [CHAT] Commands
+Add filter logic so that if the user wants to tag `@edeuxk` and writes `@edxk`, the module should be smart enough to retrieve `@edeuxk`.
 
-In the message input if the user start writing `/` we should provide a list of actions — for now we will only support the following actions :
+#### [CHAT] Commands
+
+In the message input, if the user starts writing `/`, we should provide a list of actions. For now, we will only support the following actions:
 
 - /mute @user
 - /ban @user
-- /title set a title to the current stream
-- /description set a description to the current stream
+- /title set a title for the current stream
+- /description set a description for the current stream
 
 ### Bonus
 
-`Modal` need to fit on every screen size - including resizing and scrolling inside, if user press escape need to close modal.
+`Modal` needs to fit on every screen size, including resizing and scrolling inside. If the user presses escape, it needs to close the modal.
 
-`Profile picture upload/edit` select a picture from disk file, resize and upload selected area. Compression is required and image should be less than 550kb. User don’t have to be restricted, it will be compressed by computer and saved as png. User can select svg/png/jpeg. Note that iOS store images as .heic be aware of that - [3rd library accepted]
+
+`Profile picture upload/edit` Select a picture from the disk file, resize and upload the selected area. Compression is required, and the image should be less than 550kb. The user does not have to be restricted; it will be compressed by the computer and saved as a PNG. The user can select SVG/PNG/JPEG. Note that iOS stores images as .heic, so be aware of that - [3rd party library accepted].
