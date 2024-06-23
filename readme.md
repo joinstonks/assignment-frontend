@@ -1,45 +1,47 @@
 ## Stonks Frontend Assignment
 
-#### `Only use Next.js/React library; Tailwind CSS is accepted for styling.`
+### Stonks: Twitch for Finance
 
-Your code must be clean and custom hooks are nice to have.
+At Stonks, we make finance fun! We talk about finance, but without any fuss. We are a fast-moving startup, so we need **autonomous and efficient** frontend devs who are ready to deliver good code.
 
-#### Data table: [Tanstack Table and Shadcn is accepted]
+## Your mission
 
-Create a CRUD that is SSR. You will use this endpoint to fetch data: `https://665621609f970b3b36c4625e.mockapi.io/users`
+Reproduce as much of the UI and UX from Twitch chat as possible within a maximum of 4 hours.
 
-Documentation for filters, pagination, and limit is here https://github.com/mockapi-io/docs/wiki
+## Requirements
 
-- Users can navigate from page 1 to 5.
-- Users can search by email/username.
-- Rewrite the current URL with the current page and filters. Multiple filters can be applied.
+- **Technologies**: Use only React/Next and Tailwind CSS for this task.
+- **Librairies**: You can use any NPM libraries you need, but you must explain your choice of each library in your submission. The fewer libraries you use, the better.
 
-### Chat
+### List of messages should be in a scrollable area.
 
-A simple message list of users. If someone tags you, a light background should be added to the message. If the message contains `:emoji:`, it should be replaced by the correct image.
+#### Tag a user
 
-#### [CHAT] Emojis
+<img width="331" alt="Tag a user" src="https://github.com/joinstonks/assignment-frontend/assets/8247995/178c8a34-ae5a-4678-8e58-67ad649f8da6">
 
-In the message input, if the user starts writing an `:emoji:`, a popup/tooltip or panel of emojis will appear, and the user can choose one using the keyboard and mouse.
+#### Command
 
-#### [CHAT] Tag a user
-
-In the message input, if the user starts writing `@`, a list of at least 3 users will appear.
-
-Add filter logic so that if the user wants to tag `@edeuxk` and writes `@edxk`, the module should be smart enough to retrieve `@edeuxk`.
-
-#### [CHAT] Commands
-
-In the message input, if the user starts writing `/`, we should provide a list of actions. For now, we will only support the following actions:
-
-- /mute @user
-- /ban @user
-- /title set a title for the current stream
-- /description set a description for the current stream
+<img width="330" alt="Use command twitch" src="https://github.com/joinstonks/assignment-frontend/assets/8247995/a1bd20c2-f6a4-4183-bb87-1c4ae9ee9b7b">
 
 ### Bonus
 
-`Modal` needs to fit on every screen size, including resizing and scrolling inside. If the user presses escape, it needs to close the modal.
+### Send custom emotes
 
+- Allow users to send custom emotes.
+- Download images from the `emotes` folder and integrate them into the chat.
 
-`Profile picture upload/edit` Select a picture from the disk file, resize and upload the selected area. Compression is required, and the image should be less than 550kb. The user does not have to be restricted; it will be compressed by the computer and saved as a PNG. The user can select SVG/PNG/JPEG. Note that iOS stores images as .heic, so be aware of that - [3rd party library accepted].
+<img width="336" alt="Custom emotes" src="https://github.com/joinstonks/assignment-frontend/assets/8247995/f70507f3-aecb-451c-ac44-89adf507f0df">
+
+### Stop on scroll
+
+- Implement functionality to pause the chat auto-scroll when the user is manually scrolling through the messages.
+
+<img width="338" alt="Chat paused on scroll" src="https://github.com/joinstonks/assignment-frontend/assets/8247995/25c667e5-9c2a-4911-a6e8-a51654163f40">
+
+## Submission
+
+Please submit your code by creating a public GitHub repository. Ensure that your code is well-documented and includes a README file that explains:
+
+- How to run your project.
+- The reasons for choosing any additional NPM libraries you used.
+- Any challenges you faced during the development process and how you overcame them.
