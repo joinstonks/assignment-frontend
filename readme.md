@@ -23,14 +23,14 @@ Reproduce as much of the UI and UX from Twitch chat as possible within a maximum
 
 <img width="330" alt="Use command twitch" src="https://github.com/joinstonks/assignment-frontend/assets/8247995/a1bd20c2-f6a4-4183-bb87-1c4ae9ee9b7b">
 
-### Bonus
-
 ### Send custom emotes
 
 - Allow users to send custom emotes.
 - Download images from the `emotes` folder and integrate them into the chat.
 
 <img width="336" alt="Custom emotes" src="https://github.com/joinstonks/assignment-frontend/assets/8247995/f70507f3-aecb-451c-ac44-89adf507f0df">
+
+### Bonus
 
 ### Stop on scroll
 
